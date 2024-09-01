@@ -1,0 +1,19 @@
+<div>
+    <h2>Create Account</h2>
+    <form (ngSubmit)="createAccount()">
+      <label>Name:</label>
+      <input [(ngModel)]="account.name" name="name" required>
+  
+      <label>Pan:</label>
+      <input [(ngModel)]="account.pan" name="pan" required>
+  
+      <label>Mobile Number:</label>
+      <input [(ngModel)]="account.mobileNumber" name="mobileNumber" required>
+  
+      <label>Balance:</label>
+      <input [(ngModel)]="account.balance" name="balance" type="number" required>
+  
+      <button type="submit">Create Account</button>
+    </form>
+  </div>
+  
